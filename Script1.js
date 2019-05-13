@@ -16,3 +16,12 @@ var str = "<p style = \"font-size:20px\" id = \"tw\">Aspiring Software Engineer 
     if (isTag) return type();
     setTimeout(type, 80);
 }());
+
+
+function open_linkedin() {
+    window.open('https://github.com/paraspathak', '_blank');
+}
+
+function open_github() {
+    window.open('https://github.com/paraspathak', '_blank');
+}

@@ -114,3 +114,7 @@ a {
 #home{
     min-height:100%;
 }
+
+#button_wrapper{
+    padding-top:50px;
+}
