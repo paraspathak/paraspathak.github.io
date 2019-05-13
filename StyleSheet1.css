@@ -1,0 +1,116 @@
+﻿body {
+}
+
+.zoom {
+
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+a {
+    color: #008ae6;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+}
+
+    a:hover {
+        color: #4d4dff;
+        right: 0;
+        text-decoration: none;
+    }
+
+        a:hover:after {
+            border-color: #457DFB;
+            right: 0;
+        }
+
+    a:after {
+        border-radius: 1em;
+        border-top: .1em solid #2F56B0;
+        content: "";
+        position: absolute;
+        right: 100%;
+        bottom: .14em;
+        left: 0;
+        transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
+    }
+
+    a:hover:after {
+        animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+        border-color: #457DFB;
+    }
+
+@keyframes anchor-underline {
+    0%, 10% {
+        left: 0;
+        right: 100%;
+    }
+
+    40%, 60% {
+        left: 0;
+        right: 0;
+    }
+
+    90%, 100% {
+        left: 100%;
+        right: 0;
+    }
+}
+
+.home {
+    min-height: 100%;
+    overflow: hidden;
+    background-color:#f8f9fa ;
+   
+}
+
+.rounded-circle:hover {
+    backface-visibility: hidden;
+    transform: scale(1.15, 1.15);
+    opacity: 1;
+}
+
+.rounded-circle:active {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+#myname:hover {
+    color: #4700b3;
+}
+
+#png_lang{
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+#second_skills_row{
+    padding-top:30px;
+    padding-bottom:20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#second_heading{
+    font-family:'Poppins';
+}
+
+#bio{
+    font-family:'Poppins';
+    color:white;
+}
+
+#bio:hover{
+    color:#cccccc;
+}
+
+#home{
+    min-height:100%;
+}
