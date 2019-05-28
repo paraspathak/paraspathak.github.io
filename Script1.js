@@ -25,3 +25,7 @@ function open_linkedin() {
 function open_github() {
     window.open('https://github.com/paraspathak', '_blank');
 }
+
+function open_resume(){
+    window.open("https://github.com/paraspathak/paraspathak.github.io/Resume/Resume_draft.pdf",'_blank');
+}
