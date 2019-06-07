@@ -19,7 +19,7 @@ var str = "<p style = \"font-size:20px\" id = \"tw\">Aspiring Software Engineer 
 
 
 function open_linkedin() {
-    window.open('https://github.com/paraspathak', '_blank');
+    window.open('https://www.linkedin.com/in/paras-pathak-133b07b1', '_blank');
 }
 
 function open_github() {
@@ -27,5 +27,5 @@ function open_github() {
 }
 
 function open_resume(){
-    window.open("https://github.com/paraspathak/paraspathak.github.io/Resume/Resume_draft.pdf",'_blank');
+    window.open("https://1drv.ms/w/s!AtQnjOclVBQPzX3xO00UmeEpBXWM?e=c7Alhv",'_blank');
 }
