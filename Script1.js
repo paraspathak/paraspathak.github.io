@@ -29,3 +29,13 @@ function open_github() {
 function open_resume(){
     window.open("https://1drv.ms/w/s!AtQnjOclVBQPzX3xO00UmeEpBXWM?e=c7Alhv",'_blank');
 }
+
+function check_if_mobile(){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        alert("Not mobile responsive game");
+        window.open("https://github.com/paraspathak/JS_Teen_Patti",'_blank');
+    }
+    else{
+        window.open("https://paraspathak.github.io/JS_Teen_Patti/",'_blank');
+    }
+}

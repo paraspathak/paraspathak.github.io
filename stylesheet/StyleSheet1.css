@@ -62,9 +62,9 @@ a {
     }
 }
 
-.home {
-    min-height: 100%;
-    overflow: hidden;
+#home {
+    height: 100vh;
+    overflow: auto;
     background-color:#f8f9fa ;
    
 }
@@ -117,4 +117,13 @@ a {
 
 #button_wrapper{
     padding-top:50px;
+}
+
+#typewriter{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 30vh;
+    min-height: 30%;
+    overflow: auto;
+    height: 30%;
 }
