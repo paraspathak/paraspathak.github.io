@@ -43,3 +43,7 @@ function check_if_mobile(){
 function open_link(link){
     window.open(link, '_blank');
 }
+
+function open_cpp(){
+    open_link("https://paraspathak.github.io/CPP-File_Explorer/");
+}
