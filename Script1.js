@@ -39,3 +39,7 @@ function check_if_mobile(){
         window.open("https://paraspathak.github.io/JS_Teen_Patti/",'_blank');
     }
 }
+
+function open_link(link){
+    window.open(link, '_blank');
+}
