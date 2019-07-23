@@ -1,4 +1,4 @@
-var str = "<p style = \"font-size:20px\" id = \"tw\">Aspiring Software Engineer with a voracious curiosity and an ever more urge to learn new technologies</p>",
+var str = "<p style = \"font-size:20px\" id = \"tw\">Aspiring Software Engineer with a voracious curiosity and an ever more urge to solve complex problems</p>",
     i = 0,
     isTag,
     text;
