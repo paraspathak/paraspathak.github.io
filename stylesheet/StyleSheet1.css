@@ -1,13 +1,12 @@
-﻿body {
-}
+﻿body {}
 
-.zoom {
-
-}
+.zoom {}
 
 .zoom:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
     transform: scale(1.1);
 }
 
@@ -18,45 +17,46 @@ a {
     transition: color .4s ease-out;
 }
 
-    a:hover {
-        color: #4d4dff;
-        right: 0;
-        text-decoration: none;
-    }
+a:hover {
+    color: #4d4dff;
+    right: 0;
+    text-decoration: none;
+}
 
-        a:hover:after {
-            border-color: #457DFB;
-            right: 0;
-        }
+a:hover:after {
+    border-color: #457DFB;
+    right: 0;
+}
 
-    a:after {
-        border-radius: 1em;
-        border-top: .1em solid #2F56B0;
-        content: "";
-        position: absolute;
-        right: 100%;
-        bottom: .14em;
-        left: 0;
-        transition: right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out;
-    }
+a:after {
+    border-radius: 1em;
+    border-top: .1em solid #2F56B0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, .5, 0, 1), border-color .4s ease-out;
+}
 
-    a:hover:after {
-        animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-        border-color: #457DFB;
-    }
+a:hover:after {
+    animation: anchor-underline 2s cubic-bezier(0, .5, 0, 1) infinite;
+    border-color: #457DFB;
+}
 
 @keyframes anchor-underline {
-    0%, 10% {
+    0%,
+    10% {
         left: 0;
         right: 100%;
     }
-
-    40%, 60% {
+    40%,
+    60% {
         left: 0;
         right: 0;
     }
-
-    90%, 100% {
+    90%,
+    100% {
         left: 100%;
         right: 0;
     }
@@ -65,8 +65,36 @@ a {
 #home {
     height: 100vh;
     overflow: auto;
-    background-color:#f8f9fa ;
-   
+    background-color: #f8f9fa;
+}
+
+input,
+img {
+    display: inline-block;
+}
+
+.carousel-control-prev {
+    left: 0;
+    margin-left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+    margin-right: 0;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    left: 0;
+    margin-left: 0;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    right: 0;
+    margin-right: 0;
 }
 
 .rounded-circle:hover {
@@ -76,8 +104,10 @@ a {
 }
 
 .rounded-circle:active {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
     transform: scale(1.5);
 }
 
@@ -85,41 +115,42 @@ a {
     color: #4700b3;
 }
 
-#png_lang{
-    padding-top:20px;
-    padding-left:10px;
-    padding-right:10px;
-    padding-bottom:10px;
-}
-#second_skills_row{
-    padding-top:30px;
-    padding-bottom:20px;
-    padding-left:20px;
-    padding-right:20px;
+#png_lang {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
-#second_heading{
-    font-family:'Poppins';
+#second_skills_row {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#bio{
-    font-family:'Poppins';
-    color:white;
+#second_heading {
+    font-family: 'Poppins';
 }
 
-#bio:hover{
-    color:#cccccc;
+#bio {
+    font-family: 'Poppins';
+    color: white;
 }
 
-#home{
-    min-height:100%;
+#bio:hover {
+    color: #cccccc;
 }
 
-#button_wrapper{
-    padding-top:50px;
+#home {
+    min-height: 100%;
 }
 
-#typewriter{
+#button_wrapper {
+    padding-top: 50px;
+}
+
+#typewriter {
     padding-top: 5%;
     padding-bottom: 5%;
     min-height: 30vh;

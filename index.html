@@ -1,14 +1,18 @@
 ﻿<!doctype html>
 <html lang="en">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140216360-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-140216360-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140216360-1');
     </script>
 
     <meta charset="utf-8">
@@ -17,33 +21,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheet/StyleSheet1.css" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="stylesheet/rangeslider.css" />
 
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <title>Paras Pathak</title>
     <meta name="description" content="Aspiring full stack software enginner in Dallas. Open to new opportunities acorss USA.">
     <meta name="keyword" content="Software Enginner, Full Stack, Dallas, Texas, Tech, software, agile, hire, tech, python, javascript, java, statistics, uta, UTA">
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSTZMSG"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSTZMSG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--main page -->
     <a id="home">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="home">
-                <div class="col-md-5 p-lg-5 mx-auto my-5" id = "full-page">
-                    <h1 class="display-4 font-weight-normal" id="myname">Paras Pathak</h1>
-                    <p class="lead font-weight-normal">
-                        <div id="typewriter"> </div>
-                    </p>
-                    <div class= rest>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="home">
+            <div class="col-md-5 p-lg-5 mx-auto my-5" id="full-page">
+                <h1 class="display-4 font-weight-normal" id="myname">Paras Pathak</h1>
+                <p class="lead font-weight-normal">
+                    <div id="typewriter"> </div>
+                </p>
+                <div class=rest>
                     <p><img src="headshot.jpg" class="rounded-circle"><br /><br /></p>
                     <a class="btn btn-outline-secondary" href="#projects">My Projects</a>
-                    </div>
                 </div>
             </div>
-        
+        </div>
+
     </a>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -58,7 +68,7 @@
         </div>
         <div id="button_wrapper">
             <button type="button" class="btn btn-info" onclick="open_linkedin()">Linkedin</button>
-            <button type="button" class="btn btn-light" onclick = "open_resume()">Resume</button>
+            <button type="button" class="btn btn-light" onclick="open_resume()">Resume</button>
             <button type="button" class="btn btn-success" onclick="open_github()">Github</button>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -66,57 +76,269 @@
     </div>
     <a id="skills">
     </a>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="width: 100%;">
         <h2 class="display-5">Skills</h2>
         <br />
         <div class="container-fluid">
-            <div class="row">
-                <div class="col" id="png_lang" title="C++">
-                    <img src="images/cpp_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="C">
-                    <img src="images/c_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="Java">
-                    <img src="images/java_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="Javascript">
-                    <img src="images/javascript_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="Python">
-                        <img src= "images/python_logo.png">
-                    </div>
-                <div class="col" id="png_lang" title="Matlab">
-                    <img src="images/matlab_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="HTML">
-                    <img src="images/html_logo.png">
-                </div>
-                <div class="col" id="png_lang" title="CSS">
-                    <img src="images/css_logo.png">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="second_skills_row">
-            <div class="row">
-                <div class="col">
-                    <h4 id="second_heading">Unix &middot; Git &middot; Android Studio</h4>
-                </div>
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-        </div>
-    </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container" id="first-page-skills" style="min-width: 85vw;">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/python_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r0c0" class="js-range-slider" name="py_range" style="pointer-events: none;" value="89" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/c_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r0c1" class="js-range-slider" name="c_range" value="80" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-    <a id="projects">
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-                </a>    
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/cpp_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r1c0" class="js-range-slider" name="cpp_range" value="85" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/csharp_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r1c1" class="js-range-slider" name="csharp_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/javascript_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r2c0" class="js-range-slider" name="js_range" value="90" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <td class="col-4">
+                                            <table class="table table-hover table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="col-4">
+                                                            <img src="images/matlab_logo.png">
+                                                        </td>
+                                                        <td class="col-8">
+                                                            <input type="text" id="r2c1" class="js-range-slider" name="matlab_range" value="60" />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </div>
+
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/java_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r3c0" class="js-range-slider" name="java_range" value="80" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/web_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r3c1" class="js-range-slider" name="web_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="container-fluid" id="second_skills_row">
+                                    <div class="row">
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container" id="second-page-skills" style="min-width: 85vw;">
+                            <!--Add Frameworks here-->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/android_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r4c0" class="js-range-slider" name="android_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/linux_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r5c0" class="js-range-slider" name="android_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/flask_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r6c0" class="js-range-slider" name="android_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/git-logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r7c0" class="js-range-slider" name="android_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <table class="table table-hover table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-4">
+                                                        <img src="images/django_logo.png">
+                                                    </td>
+                                                    <td class="col-8">
+                                                        <input type="text" id="r4c1" class="js-range-slider" name="android_range" value="75" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+
+                                    </div>
+                                    <div class="row">
+
+                                    </div>
+
+                                </div>
+                                <div class="container-fluid" id="second_skills_row">
+                                    <div class="row">
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <a id="projects">
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
+        </a>
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
             <div class="col">
                 <div class="zoom">
                     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="open_cpp()">
                         <div class="my-3 p-3">
-                            <h2 class="display-5"><a href="https://github.com/paraspathak/CPP-File_Explorer">CPP File Explorer</a></h2>
+                            <h2 class="display-5"><a href="https://github.com/paraspathak/CPP-File_Explorer">CPP
+                                    File
+                                    Explorer</a></h2>
                             <p class="lead">Fully functional GUI file-explorer.</p>
                         </div>
                         <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
@@ -127,54 +349,60 @@
                 <div class="zoom">
                     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="check_if_mobile()">
                         <div class="my-3 py-3">
-                            <h2 class="display-5"><a href="https://github.com/paraspathak/JS_Teen_Patti">Teen Patti</h2></a>
-                            <p class="lead">Popular card game made using JavaScript.</p>
+                            <h2 class="display-5"><a href="https://github.com/paraspathak/JS_Teen_Patti">Teen Patti
+                            </h2>
+                            </a>
+                                <p class="lead">Popular card game made using JavaScript.</p>
                         </div>
                         <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
                     </div>
                 </div>
             </div>
         </div>
-       <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                <div class="col">
-                    <div class="zoom">
-                        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="open_link('https://paraspathak.github.io/Chelsea_FC_News/')">
-                            <div class="my-3 p-3">
-                                <h2 class="display-5"><a href="https://github.com/paraspathak/Chelsea_FC_News">Chelsea FC News</a></h2>
-                                <p class="lead">Python web scraper.</p>
-                            </div>
-                            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+            <div class="col">
+                <div class="zoom">
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="open_link('https://paraspathak.github.io/Chelsea_FC_News/')">
+                        <div class="my-3 p-3">
+                            <h2 class="display-5"><a href="https://github.com/paraspathak/Chelsea_FC_News">Chelsea
+                                    FC
+                                    News</a></h2>
+                            <p class="lead">Python web scraper.</p>
                         </div>
+                        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="zoom">
-                        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="open_link('https://paraspathak.github.io/JS_To_do_List/')">
-                            <div class="my-3 py-3">
-                                <h2 class="display-5"><a href="https://github.com/paraspathak/JS_To_do_List">To Do Extension</h2></a>
+            </div>
+            <div class="col">
+                <div class="zoom">
+                    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" onclick="open_link('https://paraspathak.github.io/JS_To_do_List/')">
+                        <div class="my-3 py-3">
+                            <h2 class="display-5"><a href="https://github.com/paraspathak/JS_To_do_List">To Do
+                                    Extension
+                            </h2></a>
                                 <p class="lead">JavaScript extension for storing todo items.</p>
-                            </div>
-                            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
                         </div>
+                        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
                     </div>
                 </div>
-        </div>  
-            
-    </div>
+            </div>
+        </div>
+
+        </div>
 
 
 
 
 
-    <div class="`">
+        <div class="`">
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="Script1.js"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="Script1.js"></script>
 </body>
+
 </html>
