@@ -18,11 +18,26 @@ var str = "<p style = \"font-size:20px\" id = \"tw\">Aspiring Software Engineer 
 }());
 
 $(document).ready(function() {
-    var score = [89, 80, 85, 75, 85, 60, 80, 75, 75, 60, 80, 75, 85];
+    var score = [
+        89, //Py
+        80, //JS
+        85, //C
+        75, //Matlab
+        85, //c++
+        60, //java
+        80, //C#
+        75, //html+CSS
+        75, //android
+        60, //django
+        80, //linux
+        70, //unity
+        75, //flask
+        85 //git
+    ];
     var counter = 0;
     for (var row = 0; row < 8; row++) {
         for (var column = 0; column < 2; column++) {
-            if (row > 4 && column > 0) {
+            if (row > 5 && column > 0) {
                 break;
             }
             var id = "#r" + row + "c" + column;
