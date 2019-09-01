@@ -129,6 +129,19 @@ img {
     padding-right: 20px;
 }
 
+.card {
+    min-height: 30vh;
+    min-width: 25vh;
+}
+
+.center-text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 #second_heading {
     font-family: 'Poppins';
 }
@@ -148,6 +161,11 @@ img {
 
 #button_wrapper {
     padding-top: 50px;
+}
+
+.row {
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 #typewriter {

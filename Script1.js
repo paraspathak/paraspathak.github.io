@@ -80,8 +80,24 @@ function check_if_mobile() {
     }
 }
 
+function open_bazar() {
+    open_link("https://paraspathak.github.io/Bazar/");
+}
+
+function open_lz() {
+    open_link("https://github.com/paraspathak/Bullet_Hell_Game");
+}
+
+function open_todo() {
+    open_link("https://paraspathak.github.io/JS_To_do_List/");
+}
+
 function open_link(link) {
     window.open(link, '_blank');
+}
+
+function open_scraper() {
+    open_link("https://paraspathak.github.io/Chelsea_FC_News/");
 }
 
 function open_cpp() {
