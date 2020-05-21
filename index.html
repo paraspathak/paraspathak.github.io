@@ -1,5 +1,6 @@
-﻿<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html>
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,21 +16,49 @@
         gtag('config', 'UA-140216360-1');
     </script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Protfolio of Full Stack Software Engineer Paras Pathak">
+    <meta name="keywords"
+        content="Full Stack Software Engineer, Dallas, Texas, Developer, Data Scientist, Full Stack, Dallas, Texas, Tech, software, agile, hire, tech, python, javascript, java, statistics, uta, UTA">
+    <meta name="author" content="Paras Pathak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/rangeslider.css">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheet/StyleSheet1.css" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="stylesheet/rangeslider.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.css">
+
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+
+    <!-- JS Start-->
+
+    <!-- Font Awesome -->
+    <script src="fontawesome.js"></script>
 
     <!--jQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--Plugin JavaScript file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-    <title>Paras Pathak</title>
-    <meta name="description" content="Aspiring full stack software enginner in Dallas. Open to new opportunities acorss USA.">
-    <meta name="keyword" content="Software Enginner, Full Stack, Dallas, Texas, Tech, software, agile, hire, tech, python, javascript, java, statistics, uta, UTA">
+    <script src="jquery.js"></script>
+
+    <!--Slider-->
+    <script src="slider.js"></script>
+
+    <!-- Main -->
+    <script src="./main.js"></script>
+
+    <!-- JS END -->
+
+    <!-- Title -->
+    <title>
+        Paras Pathak - Problem Solver
+    </title>
 </head>
 
 <body>
@@ -39,291 +68,737 @@
             style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!--main page -->
-    <a id="home">
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="home">
-            <div class="col-md-5 p-lg-5 mx-auto my-5" id="full-page">
-                <h1 class="display-4 font-weight-normal" id="myname">Paras Pathak</h1>
-                <p class="lead font-weight-normal">
-                    <div id="typewriter"> </div>
+
+    <!-- Landing Page -->
+    <div class="row h-100 align-items-center">
+        <div class="col-md-8 mx-auto">
+
+            <!-- Inner Card -->
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h1 class="text-center myname">
+                        Paras Pathak
+                    </h1>
+                    <br>
+
+                    <!-- Image -->
+                    <p class="text-center">
+                        <img src="headshot.jpg" class="rounded-circle">
+                    </p>
+                    <br>
+
+                    <!-- Description Panel -->
+                    <div class="text-center desc" id="typewriter">
+                        <h5>
+                            Full Stack Software Engineer / Data Scientist
+                        </h5>
+                    </div>
+                    <br>
+
+                    <!-- Links Panel -->
+                    <div class="col-md-12 mx-auto text-center">
+                        <p class="text-center desc">
+                        <h2>
+                            <ul class="nav navbar navbar-left d-flex d-inline-flex">
+                                <li class="nav-item d-inline-flex  align-items-center mr-2">
+                                    <a class="nav-link d-inline-flex link desc"
+                                        href="https://www.linkedin.com/in/paras-pathak/">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-inline-flex  align-items-center mr-2">
+                                    <a class="nav-link d-inline-flex link desc" href="https://github.com/paraspathak">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-inline-flex  align-items-center mr-2">
+                                    <a class="nav-link d-inline-flex desc" href="mailto:paraspathak@outlook.com">
+                                        <i class="far fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </h2>
+                        </p>
+                    </div>
+                    <br>
+
+                    <!-- Resume Button -->
+                    <div class="text-center desc">
+                        <div class="btn-group mr-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-outline-secondary resume"
+                                onclick="window.open('https://1drv.ms/b/s!AtQnjOclVBQPgdEPE-2KurU4mWW-Kw?e=3ZP5Ud', '_blank')">
+                                Resume
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Me Page -->
+    <div class="row align-items-center alternate" id="aboutme">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        About Me
+                    </h1>
+                </div>
+            </div>
+            <br>
+
+            <!-- Centered info -->
+            <div class="row">
+
+                <!-- Description Panel Left-->
+                <div class="col-md-4 mx-auto paddeddiv">
+                    <div class="col-md-12 mx-auto">
+                        <h1 class="text-center aboutme">
+                            Hi There! I'm Paras.
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Description Panel Right-->
+                <div class="col-md-6 mx-auto paddeddiv">
+                    <p class=" aboutme pp">
+                        I'm a senior at the Univeristy of Texas at Arlington majoring in Computer Science.
+                    </p>
+                    <p class="aboutme pp">
+                        I am an avid problem solver and a life-long learner with a voracious curiosity and an urge to
+                        solve challenging problems.
+                        The constant change and ever long quest to improve is what excites me the most about computer
+                        science
+                    </p>
+
+
+                </div>
+            </div>
+
+            <!-- Bottom Emphasis Catch Phrase -->
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <p class="aboutme mx-auto text-center paddeddiv">
+                        Besides that, I am also a <em><b>strong</b></em> beleiver of using <em><b>code and data
+                            </b></em> to solve complex business
+                        problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skills Page -->
+    <div class="row align-items-center">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        Skills
+                    </h1>
+                </div>
+            </div>
+            <br>
+
+            <!-- Centered Skills Panel -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center paddeddiv">
+                        <div class="col-md-12 mx-auto">
+
+                            <!-- Skills Carousel -->
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <!-- First Page of Skills -->
+                                        <div class="container" id="first-page-skills" style="min-width: 85vw;">
+                                            <div class="row mx-auto text-center align-items-center">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/python_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r0c0" class="js-range-slider"
+                                                                name="py_range" style="pointer-events: none;"
+                                                                value="89" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/c_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r0c1" class="js-range-slider"
+                                                                name="c_range" value="80" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/cpp_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r1c0" class="js-range-slider"
+                                                                name="cpp_range" value="85" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/csharp_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r1c1" class="js-range-slider"
+                                                                name="csharp_range" value="75" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/javascript_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r2c0" class="js-range-slider"
+                                                                name="js_range" value="90" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/matlab_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r2c1" class="js-range-slider"
+                                                                name="matlab_range" value="60" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/java_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r3c0" class="js-range-slider"
+                                                                name="java_range" value="80" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/web_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r3c1" class="js-range-slider"
+                                                                name="web_range" value="75" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="container-fluid" id="second_skills_row">
+                                                    <div class="row">
+                                                        <div class="col">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                                                    <div
+                                                        class="product-device product-device-2 shadow-sm d-none d-md-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- Second Page of Skills -->
+                                        <div class="container" id="second-page-skills" style="min-width: 85vw;">
+                                            <!--Add Frameworks here-->
+                                            <div class="row mx-auto text-center align-items-center">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+
+                                                        <div class="col-4">
+                                                            <img src="images/android_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r4c0" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <div class="col-4">
+                                                            <img src="images/linux_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r5c0" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/flask_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r6c0" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <img src="images/git-logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r7c0" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+
+                                                        <div class="col-4">
+                                                            <img src="images/django_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r4c1" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                        <div class="col-4">
+                                                            <img src="images/unity_logo.png">
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <input type="text" id="r5c1" class="js-range-slider"
+                                                                name="android_range" value="75" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="container-fluid" id="second_skills_row">
+                                                    <div class="row">
+                                                        <div class="col">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-device shadow-sm d-none d-md-block"></div>
+                                                    <div
+                                                        class="product-device product-device-2 shadow-sm d-none d-md-block">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Padding -->
+            <div class="paddeddiv"></div>
+        </div>
+    </div>
+
+
+    <!-- Work Experience -->
+    <div class="row align-items-center alternate">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        Work Experience
+                    </h1>
+                </div>
+            </div>
+            <br>
+
+            <!-- Timeline Here -->
+            <div class="row mx-auto align-items-center">
+                <div class="col-md-12 paddeddiv mx-auto">
+
+                    <!-- Timeline section -->
+                    <section class="cd-timeline js-cd-timeline alternate">
+                        <div class="container max-width-lg cd-timeline__container alternate">
+
+                            <!-- Electron POS -->
+                            <div class="cd-timeline__block">
+                                <div class="cd-timeline__img bgwhite">
+                                    <h2><i class="fas fa-briefcase"></i></h2>
+                                </div>
+                                <div class="cd-timeline__content text-component">
+                                    <h2>Electron POS</h2>
+                                    <p>
+                                    <h5 class="subtitle">Founder</h5>
+                                    <h6 class="timing">December 2019 - Present</h6>
+                                    </p>
+                                    <p class="desc">
+                                        • Designed an intuitive cloud-based Point of Sale system using NodeJS and
+                                        Electron, that allows remote report generation, inventory reminders and an
+                                        intuitive sales terminal.
+                                        <br>
+                                        • Assembled, configured and sold Electron POS to 15 different convenience stores
+                                        across Dallas.
+                                        <br>
+                                        • Configured a Barcode Scanner, Cash Drawer to work with a packaged app running
+                                        on Linux.
+                                        <br>
+                                        • Designed a NodeJS library for thermal printers, that translates words into
+                                        hexadecimal code to print to a receipt.
+                                    </p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="cd-timeline__date white">December 2019</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- IDIR Lab -->
+                            <div class="cd-timeline__block">
+                                <div class="cd-timeline__img bgwhite">
+                                    <h2><i class="fas fa-laptop-code"></i></h2>
+                                </div>
+                                <div class="cd-timeline__content text-component">
+                                    <h2>IDIR - UTA</h2>
+                                    <p>
+                                    <h5 class="subtitle">Research Intern, Software Engineer</h5>
+                                    <h6 class="timing">June 2019 - Present</h6>
+                                    </p>
+                                    <p class=" desc">
+                                        • Created service files for an API and scripts to continuously run in Red Hat
+                                        Enterprise Linux.
+                                        <br>
+                                        • Developed a priority scheduling algorithm using Python that emails users daily
+                                        or weekly about politicians’ tweets based upon selected criteria like
+                                        fact-worthiness and twitter-accounts efficiently.
+                                        <br>
+                                        • Implemented a decoupled web-app using Flask in backend and AJAX, jQuery in
+                                        front end.
+                                        <br>
+                                        • Increased user-adoption by 10% by developing an intuitive dashboard using
+                                        JavaScript and jQuery.
+                                        <br>
+                                        • Designed and developed a login system that allows users to create a new
+                                        account, verify and retrieve their account, and store their information in a
+                                        MySQL database.
+                                        <br>
+                                        • Updated IDIR Lab’s website to be more mobile friendly using Bootstrap and
+                                        JavaScript.
+                                    </p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="cd-timeline__date white">July 2019</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NLC -->
+                            <div class="cd-timeline__block">
+                                <div class="cd-timeline__img bgwhite">
+                                    <h2><i class="fas fa-chalkboard-teacher"></i></h2>
+                                </div>
+                                <div class="cd-timeline__content text-component cd-timeline__content--bounce-in">
+                                    <h2>North Lake College</h2>
+                                    <p>
+                                    <h5 class="subtitle">Math PI Assistant</h5>
+                                    <h6 class="timing">August 2017 - May 2018</h6>
+                                    </p>
+                                    <p class=" desc">
+                                        • Took complicated mathematics concepts and explained it to diverse learners.
+                                        <br>
+                                        • Assisted 50 students to complete and comprehend college level mathematics
+                                        classes.
+                                        <br>
+                                        • Helped professor integrate technology into the classroom by developing
+                                        PowerPoint slides.
+                                    </p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="cd-timeline__date white">August 2017</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Time Line Section is complete -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Education Page -->
+    <div class="row align-items-center">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        Education
+                    </h1>
+                </div>
+            </div>
+
+
+            <!-- Centered info -->
+            <div class="row">
+                <div class="col-md-12 mx-auto paddeddiv">
+                    <div class="row text-left">
+                        <div class="col-md-9 mx-auto">
+
+                            <div class="col-md-10 align-items-center mx-auto text-center">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="aboutme">
+                                            The Univeristy of Texas at Arlington
+
+                                        </h3>
+                                        <h5> (August 2018 - December 2020)</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="aboutme">
+                                            Computer Science
+                                        </h5>
+                                        <h5> GPA 4.0</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="aboutme">
+                                            Machine Learning, Object Oriented Programming, Artificial Intelligence,
+                                            Algoritms and Data Structures, Data Mining
+                                        </h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom Emphasis Catch Phrase -->
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <p class="aboutme mx-auto text-center">
+                        Dean's List <em><b>Spring 2019</b></em>, <em><b>Fall 2019</b></em>, <em><b>Spring 2020</b></em>
+                    </p>
+                    <p class="aboutme mx-auto text-center">
+                        Winner of Best Hardware Project at <em><b>Hack UTA 2019</b></em>
+                    </p>
+                    <p class="aboutme mx-auto text-center">
+                        Academic Excellence Recognition <em><b>Spring 2020</b></em>
+                    </p>
+                </div>
+            </div>
+            <div class="paddeddiv"></div>
+        </div>
+    </div>
+
+
+    <!-- Projects Page -->
+    <div class="row align-items-center alternate">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        My Projects
+                    </h1>
+                </div>
+            </div>
+            <br>
+
+            <!-- Centered Projects Space -->
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+
+                    <!-- Conatiner to contain total projects -->
+                    <div class="container">
+                        <!-- First Row of Projects -->
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm zoom" onclick="open_lz()">
+                                <img class="project-image" src="images/bullet.png">
+                                <div class="card-body">
+                                    <div class="center-text"><a href="#projects">LazerQuest</a></div>
+                                    <div class="desc">Arcade style Android Game made using Unity and
+                                        Firebase.</div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm zoom" onclick="open_bazar()">
+                                <img class="project-image" src="images/bazar.jpeg">
+                                <div class="card-body">
+                                    <div class="center-text"><a href="#projects">Bazar</a></div>
+                                    <div class="desc">Android clone of Amazon App with Firebase backend.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm zoom" onclick="open_todo()">
+                                <img class="project-image" src="images/todo.png">
+                                <div class="card-body">
+                                    <div class="center-text"><a href="#projects">JS Todo List</a></div>
+                                    <div class="desc">Chrome Extension for managing your busy life.</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Second Row of Projects -->
+                        <div class="card-deck mb-3 text-center">
+                            <div class="card mb-4 shadow-sm zoom" onclick="check_if_mobile()">
+                                <img class="project-image" src="images/teen_patti.jpg">
+                                <div class="card-body">
+                                    <div class="center-text"><a href="#projects">Teen Patti<br></a></div>
+                                    <div class="desc">Popular Poker Game made using JavaScript.</div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm zoom" onclick="open_scraper()">
+                                <img class="project-image" src="images/soccer.jpg">
+                                <div class="card-body">
+                                    <div class="center-text"><a href="#projects">Chelsea Scraper</a></div>
+                                    <div class="desc">Python Web Scrapper that emails latest Chelsea FC
+                                        news.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4 shadow-sm zoom" onclick="open_cpp()">
+                                <img class="project-image" src="images/file.png">
+                                <div class="card-body">
+                                    <div class="center-text"> <a href="#projects">CPP File Explorer</a></div>
+                                    <div class="desc">Fully functional, light-weight GUI fileexplorer
+                                        made
+                                        using C++. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Padding at the End -->
+            <div class="paddeddiv"></div>
+        </div>
+    </div>
+
+
+    <!-- Contacts Page -->
+    <div class="row align-items-center">
+        <div class="col-md-12">
+            <!-- Header in top -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h1 class="text-center myname">
+                        Let's Talk!
+                    </h1>
+                </div>
+            </div>
+            <br>
+
+            <!-- Centered Desc -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-center desc">
+                        I would love to hear more from you! Please feel free to contact me about any thing tech!
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Links Panel -->
+            <div class="col-md-8 mx-auto text-center">
+                <p class="text-center desc">
+                <h2>
+                    <ul class="nav navbar navbar-left d-flex d-inline-flex">
+                        <li class="nav-item d-inline-flex  align-items-center mr-2">
+                            <a class="nav-link d-inline-flex link desc"
+                                href="https://www.linkedin.com/in/paras-pathak/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-flex  align-items-center mr-2">
+                            <a class="nav-link d-inline-flex link desc" href="https://github.com/paraspathak">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-inline-flex  align-items-center mr-2">
+                            <a class="nav-link d-inline-flex desc" href="mailto:paraspathak@outlook.com">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </h2>
                 </p>
-                <div class=rest>
-                    <p><img src="headshot.jpg" class="rounded-circle"><br /><br /></p>
-                    <a class="btn btn-outline-secondary" href="#projects">My Projects</a>
-                </div>
             </div>
-        </div>
+            <br>
 
-    </a>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+
+            <!-- Bottom Padding -->
+            <div class="paddeddiv"></div>
+        </div>
     </div>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h2 id="bio">
-                Hello there! I'm Paras Pathak. A Computer Science junior at The University of Texas at Arlington.
-            </h2>
+
+    <!-- Footer -->
+    <div class="row align-items-center alternate">
+        <div class="col-md-12">
+            <!-- Info for last updated and copyright -->
+            <div class="row align-items-center paddeddiv">
+                <div class="col-md-12 mx-auto">
+                    <h5 class="text-center desc white">
+                        <i class="far fa-copyright"></i>
+                        <em> Paras Pathak</em>
+                    </h5>
+                    <p class="text-center">
+                        Last updated on 5/20/2020
+                    </p>
+                </div>
+            </div>
+            <br>
 
         </div>
-        <div id="button_wrapper">
-            <button type="button" class="btn btn-info" onclick="open_linkedin()">Linkedin</button>
-            <button type="button" class="btn btn-light" onclick="open_resume()">Resume</button>
-            <button type="button" class="btn btn-success" onclick="open_github()">Github</button>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
-    <a id="skills">
-    </a>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="width: 100%;">
-        <h2 class="display-5">Skills</h2>
-        <br />
-        <div class="container-fluid">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container" id="first-page-skills" style="min-width: 85vw;">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/python_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r0c0" class="js-range-slider" name="py_range" style="pointer-events: none;" value="89" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/c_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r0c1" class="js-range-slider" name="c_range" value="80" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/cpp_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r1c0" class="js-range-slider" name="cpp_range" value="85" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/csharp_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r1c1" class="js-range-slider" name="csharp_range" value="75" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/javascript_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r2c0" class="js-range-slider" name="js_range" value="90" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/matlab_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r2c1" class="js-range-slider" name="matlab_range" value="60" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/java_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r3c0" class="js-range-slider" name="java_range" value="80" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/web_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r3c1" class="js-range-slider" name="web_range" value="75" />
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="container-fluid" id="second_skills_row">
-                                    <div class="row">
-                                        <div class="col">
 
-                                        </div>
-                                    </div>
-                                    <div class="product-device shadow-sm d-none d-md-block"></div>
-                                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container" id="second-page-skills" style="min-width: 85vw;">
-                            <!--Add Frameworks here-->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
+    <!-- Popper.js, then Bootstrap JS -->
+    <script src="popper.js"></script>
+    <script src="bootstrap.js"></script>
 
-                                        <div class="col-4">
-                                            <img src="images/android_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r4c0" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
 
-                                    </div>
-                                    <div class="row">
-
-                                        <div class="col-4">
-                                            <img src="images/linux_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r5c0" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/flask_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r6c0" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img src="images/git-logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r7c0" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-
-                                        <div class="col-4">
-                                            <img src="images/django_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r4c1" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-
-                                        <div class="col-4">
-                                            <img src="images/unity_logo.png">
-                                        </div>
-                                        <div class="col-8">
-                                            <input type="text" id="r5c1" class="js-range-slider" name="android_range" value="75" />
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-
-                                    </div>
-
-                                </div>
-                                <div class="container-fluid" id="second_skills_row">
-                                    <div class="row">
-                                        <div class="col">
-
-                                        </div>
-                                    </div>
-                                    <div class="product-device shadow-sm d-none d-md-block"></div>
-                                    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-
-        <a id="projects">
-            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-        </a>
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="container">
-                <h2 class="display-5" style="color: aliceblue;">Projects</h2>
-                <br>
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm zoom" onclick="open_lz()">
-                        <img class="project-image" src="images/bullet.png">
-                        <div class="card-body">
-                            <div class="center-text"><a href="#projects">LazerQuest</a></div>
-                            <div class="project-description">Arcade style Android Game made using Unity and Firebase.</div>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm zoom" onclick="open_bazar()">
-                        <img class="project-image" src="images/bazar.jpeg">
-                        <div class="card-body">
-                            <div class="center-text"><a href="#projects">Bazar</a></div>
-                            <div class="project-description">Android clone of Amazon App with Firebase backend.</div>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm zoom" onclick="open_todo()">
-                        <img class="project-image" src="images/todo.png">
-                        <div class="card-body">
-                            <div class="center-text"><a href="#projects">JS Todo List</a></div>
-                            <div class="project-description">Chrome Extension for managing your busy life.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-deck mb-3 text-center">
-                    <div class="card mb-4 shadow-sm zoom" onclick="check_if_mobile()">
-                        <img class="project-image" src="images/teen_patti.jpg">
-                        <div class="card-body">
-                            <div class="center-text"><a href="#projects">Teen Patti<br></a></div>
-                            <div class="project-description">Popular Poker Game made using JavaScript.</div>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm zoom" onclick="open_scraper()">
-                        <img class="project-image" src="images/soccer.jpg">
-                        <div class="card-body">
-                            <div class="center-text"><a href="#projects">Chelsea Scraper</a></div>
-                            <div class="project-description">Python Web Scrapper that emails latest Chelsea FC news.</div>
-                        </div>
-                    </div>
-                    <div class="card mb-4 shadow-sm zoom" onclick="open_cpp()">
-                        <img class="project-image" src="images/file.png">
-                        <div class="card-body">
-                            <div class="center-text"> <a href="#projects">CPP File Explorer</a></div>
-                            <div class="project-description">Fully functional, light-weight GUI fileexplorer made using C++. </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        </div>
-        <!-- Optional JavaScript -->
-        <!-- Popper.js, then Bootstrap JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="Script1.js"></script>
 </body>
 
 </html>
