@@ -29,6 +29,79 @@
     <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
     <link rel="stylesheet" type="text/css" href="stylesheet/rangeslider.css">
 
+    <style>
+        svg {
+            width: 70px;
+            height: 70px;
+        }
+
+        .vertical-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .fill-a {
+            height: 10px;
+            background-color: #27ae60;
+            border-radius: 8px;
+        }
+
+        .fill-b {
+            height: 10px;
+            background-color: #d35400;
+            border-radius: 8px;
+        }
+
+        .fill-c {
+            height: 10px;
+            background-color: #2980b9;
+            border-radius: 8px;
+        }
+
+        .fill-d {
+            height: 10px;
+            background-color: #ce8244;
+            border-radius: 8px;
+        }
+
+        .fill-e {
+            height: 10px;
+            background-color: #2980b9;
+            border-radius: 8px;
+        }
+
+        .fill-f {
+            height: 10px;
+            background-color: #ce8244;
+            border-radius: 8px;
+        }
+
+        .fill-g {
+            height: 10px;
+            background-color: #d35400;
+            border-radius: 8px;
+        }
+
+        .fill-h {
+            height: 10px;
+            background-color: #27ae60;
+            border-radius: 8px;
+        }
+
+        .proficiency {
+            position: relative;
+            background-color: #efefef;
+            border-radius: 8px;
+        }
+
+        .skills {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.css">
 
@@ -219,92 +292,89 @@
                                         <div class="container" id="first-page-skills" style="min-width: 85vw;">
                                             <div class="row mx-auto text-center align-items-center">
                                                 <div class="col-md-6">
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/python_logo.png">
+                                                            <img src="images/python_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r0c0" class="js-range-slider"
-                                                                name="py_range" style="pointer-events: none;"
-                                                                value="89" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-a" style="width: 89%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/c_logo.png">
+
+                                                            <img src="images/react.svg" width="70px" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r0c1" class="js-range-slider"
-                                                                name="c_range" value="80" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-b" style="width: 80%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/cpp_logo.png">
+                                                            <img src="images/AWS.png" width="70px" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r1c0" class="js-range-slider"
-                                                                name="cpp_range" value="85" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-c" style="width: 75%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/csharp_logo.png">
+                                                            <img src="images/csharp_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r1c1" class="js-range-slider"
-                                                                name="csharp_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-d" style="width: 70%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/javascript_logo.png">
+                                                            <img src="images/javascript_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r2c0" class="js-range-slider"
-                                                                name="js_range" value="90" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-e" style="width: 90%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/matlab_logo.png">
+                                                            <img src="images/cpp_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r2c1" class="js-range-slider"
-                                                                name="matlab_range" value="60" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-f" style="width: 82%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <img src="images/java_logo.png">
-                                                        </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r3c0" class="js-range-slider"
-                                                                name="java_range" value="80" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <img src="images/web_logo.png">
-                                                        </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r3c1" class="js-range-slider"
-                                                                name="web_range" value="75" />
-                                                        </div>
-                                                    </div>
-                                                </div>
 
-                                                <div class="container-fluid" id="second_skills_row">
-                                                    <div class="row">
-                                                        <div class="col">
-
+                                                    <div class="row skills">
+                                                        <div class="col-4">
+                                                            <img src="images/java_logo.png" height="70px">
+                                                        </div>
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-g" style="width: 79%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product-device shadow-sm d-none d-md-block"></div>
-                                                    <div
-                                                        class="product-device product-device-2 shadow-sm d-none d-md-block">
+                                                    <div class="row skills">
+                                                        <div class="col-4">
+                                                            <img src="images/web_logo.png" height="70px">
+                                                        </div>
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-h" style="width: 89%;"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -316,86 +386,91 @@
                                             <!--Add Frameworks here-->
                                             <div class="row mx-auto text-center align-items-center">
                                                 <div class="col-md-6">
-                                                    <div class="row">
-
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/android_logo.png">
+                                                            <img src="images/android_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r4c0" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-a" style="width: 72%;"></div>
+                                                            </div>
                                                         </div>
-
                                                     </div>
-                                                    <div class="row">
-
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/linux_logo.png">
+                                                            <img src="images/linux_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r5c0" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-b" style="width: 89%;"></div>
+                                                            </div>
                                                         </div>
-
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/flask_logo.png">
+                                                            <img src="images/flask_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r6c0" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-c" style="width: 85%;"></div>
+                                                            </div>
                                                         </div>
-
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
                                                         <div class="col-4">
-                                                            <img src="images/git-logo.png">
+                                                            <img src="images/git-logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r7c0" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-d" style="width: 82%;"></div>
+                                                            </div>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="row">
+                                                    <div class="row skills">
 
                                                         <div class="col-4">
-                                                            <img src="images/django_logo.png">
+                                                            <img src="images/django_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r4c1" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-e" style="width: 62%;"></div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
-                                                    <div class="row">
+                                                    <div class="row skills">
 
                                                         <div class="col-4">
-                                                            <img src="images/unity_logo.png">
+                                                            <img src="images/unity_logo.png" height="70px">
                                                         </div>
-                                                        <div class="col-8">
-                                                            <input type="text" id="r5c1" class="js-range-slider"
-                                                                name="android_range" value="75" />
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-f" style="width: 68%;"></div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
-                                                    <div class="row">
-
-                                                    </div>
-
-                                                </div>
-                                                <div class="container-fluid" id="second_skills_row">
-                                                    <div class="row">
-                                                        <div class="col">
-
+                                                    <div class="row skills">
+                                                        <div class="col-4">
+                                                            <img src="images/c_logo.png" height="70px">
+                                                        </div>
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-g" style="width: 79%;"></div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product-device shadow-sm d-none d-md-block"></div>
-                                                    <div
-                                                        class="product-device product-device-2 shadow-sm d-none d-md-block">
+                                                    <div class="row skills">
+                                                        <div class="col-4">
+                                                            <img src="images/matlab_logo.png" height="70px">
+                                                        </div>
+                                                        <div class="col-8 vertical-center">
+                                                            <div class="proficiency w-100">
+                                                                <div class="fill-h" style="width: 59%;"></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -405,12 +480,16 @@
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                                     data-slide="prev" style="color: red;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"><h1><i class="fas fa-chevron-left"></i></h1></span>
+                                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                                        <h1><i class="fas fa-chevron-left"></i></h1>
+                                    </span>
                                     <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleControls" role="button"
                                     data-slide="next" style="color: red;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"><h1><i class="fas fa-chevron-right"></i></h1></i></span>
+                                    <span class="carousel-control-next-icon" aria-hidden="true">
+                                        <h1><i class="fas fa-chevron-right"></i></h1></i>
+                                    </span>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
@@ -466,6 +545,12 @@
                                         • Assembled, configured and sold Electron POS to 15 different convenience stores
                                         across Dallas.
                                         <br>
+                                        • Created a dashboard for remote report viewing using React and deployed it on
+                                        AWS EC2.
+                                        <br>
+                                        • Enhanced user interface by using Web Workers for processor heavy computation
+                                        and IO tasks
+                                        <br>
                                         • Configured a Barcode Scanner, Cash Drawer to work with a packaged app running
                                         on Linux.
                                         <br>
@@ -491,12 +576,11 @@
                                     <h6 class="timing">June 2019 - Present</h6>
                                     </p>
                                     <p class=" desc">
-                                        • Created service files for an API and scripts to continuously run in Red Hat
+                                        • Created service files for several scripts to continuously run in Red Hat
                                         Enterprise Linux.
                                         <br>
-                                        • Developed a priority scheduling algorithm using Python that emails users daily
-                                        or weekly about politicians’ tweets based upon selected criteria like
-                                        fact-worthiness and twitter-accounts efficiently.
+                                        • Created a python script that creates personalized HTML email for each users
+                                        and emails them daily.
                                         <br>
                                         • Implemented a decoupled web-app using Flask in backend and AJAX, jQuery in
                                         front end.
@@ -504,12 +588,30 @@
                                         • Increased user-adoption by 10% by developing an intuitive dashboard using
                                         JavaScript and jQuery.
                                         <br>
-                                        • Designed and developed a login system that allows users to create a new
+                                        • Designed and developed a login system based on cookies that allows users to
+                                        create a new
                                         account, verify and retrieve their account, and store their information in a
                                         MySQL database.
                                         <br>
-                                        • Updated IDIR Lab’s website to be more mobile friendly using Bootstrap and
-                                        JavaScript.
+                                        • Created config files for Ngnix to reverse proxy requests to a uWsgi upstream
+                                        server.
+                                        <br>
+                                        • Created python scripts to bulk load, retrieve, and delete data from Elastic
+                                        Search Database.
+                                        <br>
+                                        • Added new endpoints to REST API using Flask to render user’s dashboard and
+                                        protected them from CSRF.
+                                        <br>
+                                        • Created a node.js script that constantly probes other API and stores their
+                                        response in MongoDB.
+                                        <br>
+                                        • Developed a node.js webapp using MVC pattern that retrieves data from MongoDB,
+                                        renders it using EJS and deployed it on Arch Linux using Express web application
+                                        framework.
+                                        <br>
+                                        • Created a login Single Sign On micro service using Flask and OAuth 2.0 that
+                                        other applications call to
+                                        authenticate user using either GitHub or Gmail account.
                                     </p>
                                     <div class="flex justify-between items-center">
                                         <span class="cd-timeline__date white">July 2019</span>
@@ -784,7 +886,7 @@
                         <em> Paras Pathak</em>
                     </h5>
                     <p class="text-center">
-                        Last updated on 5/20/2020
+                        Last updated on 09/09/2020
                     </p>
                 </div>
             </div>
